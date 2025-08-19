@@ -36,7 +36,8 @@ public class Customer : MonoBehaviour
         bodyrenderer.sprite = sprites[UnityEngine.Random.Range(0, sprites.Length)].body;
         shirtrenderer.sprite = sprites[UnityEngine.Random.Range(0, sprites.Length)].shirt;
         //hi marv if youre reading this this part is where you spawn the customer requsts
-
+        //like you do the rng stuff here ok?
+        //ik itll be hard and allat but gllll feel free to ask me for help - lucar
 
 
     }
