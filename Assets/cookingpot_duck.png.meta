@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cookingpot_duck_0: 4716981015558018995
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

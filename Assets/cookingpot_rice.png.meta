@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cookingpot_rice_0: 5751184433708419795
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
