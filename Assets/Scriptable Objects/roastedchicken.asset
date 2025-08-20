@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b21df37d64f2824e98032c7c71a530a, type: 3}
   m_Name: roastedchicken
   m_EditorClassIdentifier: 
-  foodName: 
+  foodName: chimken
   foodDescription: 
   unplatedFoodSprite: {fileID: 0}
   platedFoodSprite: {fileID: 0}
