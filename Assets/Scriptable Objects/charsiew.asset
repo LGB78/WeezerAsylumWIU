@@ -17,3 +17,4 @@ MonoBehaviour:
   unplatedFoodSprite: {fileID: 0}
   platedFoodSprite: {fileID: 0}
   isEdible: 0
+  isCuttable: 1

@@ -740,8 +740,10 @@ GameObject:
   m_Component:
   - component: {fileID: 459408563}
   - component: {fileID: 459408562}
+  - component: {fileID: 459408565}
+  - component: {fileID: 459408564}
   m_Layer: 0
-  m_Name: IMG_5898 (1)_0
+  m_Name: cutting board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -811,12 +813,72 @@ Transform:
   m_GameObject: {fileID: 459408561}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.350034, y: -0.8322835, z: 0.050591175}
+  m_LocalPosition: {x: 4.5668, y: -2.3333, z: 0}
   m_LocalScale: {x: 7.8516707, y: 6.2939177, z: 1.2537035}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1218687870}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &459408564
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459408561}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.32}
+    newSize: {x: 0.46, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.46, y: 0.32}
+  m_EdgeRadius: 0
+--- !u!114 &459408565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459408561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c7cef9e52d6b764cbcb4080ebf76a26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodContainer: {fileID: 0}
+  SpawnY: 0.28
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,7 +1682,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 6982564008495590550, guid: 1f2b28f325f94314a9f991a070cb3b59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1744,6 +1806,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1085535139}
   - component: {fileID: 1085535138}
+  - component: {fileID: 1085535140}
+  - component: {fileID: 1085535141}
   m_Layer: 0
   m_Name: roastchicken_0
   m_TagString: Untagged
@@ -1816,11 +1880,70 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.0066735595, y: 0.0433342, z: 0}
-  m_LocalScale: {x: 1.0122334, y: 0.9820667, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.21645069, y: 0.21000001, z: 0.21383476}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2046485908}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1085535140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085535137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dd97afa8f6898a44b825a3815e1a1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  food: {fileID: 11400000, guid: a5af45920e5880f4db067320f80553da, type: 2}
+--- !u!61 &1085535141
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085535137}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.15, y: 0.9}
+    newSize: {x: 0.43, y: 0.18}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.97, y: 0.68}
+  m_EdgeRadius: 0
 --- !u!1 &1093309502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2266,7 +2389,6 @@ Transform:
   - {fileID: 284868220}
   - {fileID: 1712824460}
   - {fileID: 251459721}
-  - {fileID: 459408563}
   - {fileID: 1142313405}
   - {fileID: 1415023258}
   - {fileID: 1093309504}
@@ -2812,7 +2934,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.04, y: 0.065}
+  m_AnchoredPosition: {x: 0.036, y: 0.057}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1717945175
@@ -2932,7 +3054,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2141077cbf42fad42b527f0c23f0ca27, type: 2}
+  - {fileID: 8942175538618471881, guid: 29a8540ee304aed49b8e70b555128631, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3402,7 +3524,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -4795573259988461060, guid: feb9f65f1f5669b45a9acf582097c663, type: 3}
   m_Color: {r: 0.41860446, g: 0.80839914, b: 0.85660374, a: 1}
   m_FlipX: 0
@@ -3521,7 +3643,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -4795573259988461060, guid: feb9f65f1f5669b45a9acf582097c663, type: 3}
   m_Color: {r: 0.41860446, g: 0.80839914, b: 0.85660374, a: 1}
   m_FlipX: 0
@@ -3561,5 +3683,6 @@ SceneRoots:
   - {fileID: 2065541357}
   - {fileID: 380719212}
   - {fileID: 1777848033}
+  - {fileID: 459408563}
   - {fileID: 1218687870}
   - {fileID: 560223153}

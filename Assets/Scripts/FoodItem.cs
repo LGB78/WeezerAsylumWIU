@@ -10,4 +10,5 @@ public class FoodItem : ScriptableObject
     public Sprite platedFoodSprite;  // Sprite shown on plate/cutting board
 
     public bool isEdible; // true if safe to eat
+    public bool isCuttable; //true if can be cut on chopping board
 }
