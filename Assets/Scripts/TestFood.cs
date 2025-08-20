@@ -39,7 +39,7 @@ public class TestFood : MonoBehaviour
         }
     }
 
-    void TryPlaceFood(Vector3 dropPosition)
+    private void TryPlaceFood(Vector3 dropPosition)
     {
         Collider2D hit = Physics2D.OverlapPoint(dropPosition);
         if (hit != null)
@@ -47,7 +47,10 @@ public class TestFood : MonoBehaviour
             FoodTarget target = hit.GetComponent<FoodTarget>();
             if (target != null)
             {
-                target.ReceiveFood(food);
+                if (food.isCuttable && target.isBoard)
+                    target.ReceiveFood(food);
+                else if (!food.isCuttable && !target.isBoard)
+                    target.ReceiveFood(food);
             }
         }
     }
