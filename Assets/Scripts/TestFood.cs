@@ -1,10 +1,7 @@
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class TestFood : MonoBehaviour
 {
-    private Vector2 offset;
     private Vector2 startPosition;
     private bool isClicked;
     private Collider2D thiscollider;
@@ -12,6 +9,10 @@ public class TestFood : MonoBehaviour
 
     public FoodItem food;
     public GameObject plate;
+
+
+    //hi julian i added this code so itll work ok? i think we can slap this as an extra componont so to enable stuff to be dragged
+    DraggableObject draggableObject;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -76,7 +77,7 @@ public class TestFood : MonoBehaviour
     {
         if (!isPlated)
         {
-            DragObject();
+            draggableObject.DragObject();
         }
 
     }
@@ -88,12 +89,5 @@ public class TestFood : MonoBehaviour
         return g.GetComponent<Collider2D>().OverlapPoint(point);
     }
 
-    //code that drags clicked object while mouse is down.
-    public void DragObject()
-    {
-        Vector2 curScreenPoint = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
 
-        Vector2 curPosition = new Vector2(Camera.main.ScreenToWorldPoint(curScreenPoint).x, Camera.main.ScreenToWorldPoint(curScreenPoint).y) + offset;
-        transform.position = curPosition;
-    }
 }
