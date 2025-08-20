@@ -12,7 +12,7 @@ public class TestFood : MonoBehaviour
 
 
     //hi julian i added this code so itll work ok? i think we can slap this as an extra componont so to enable stuff to be dragged
-    DraggableObject draggableObject;
+    private DraggableObject draggableObject;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +21,7 @@ public class TestFood : MonoBehaviour
         isClicked = false;
         thiscollider = GetComponent<Collider2D>();
         isPlated = false;
+        draggableObject = GetComponent<DraggableObject>();
     }
 
     // Update is called once per frame
