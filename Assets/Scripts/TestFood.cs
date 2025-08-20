@@ -2,93 +2,53 @@ using UnityEngine;
 
 public class TestFood : MonoBehaviour
 {
-    private Vector2 startPosition;
-    private bool isClicked;
-    private Collider2D thiscollider;
-    private bool isPlated;
+    public FoodItem food;                // assign which food this source gives
+    private GameObject heldObj;          // temporary sprite following the mouse
+    private DraggableObject draggable;   // reference to draggable component
 
-    public FoodItem food;
-    public GameObject plate;
-
-
-    //hi julian i added this code so itll work ok? i think we can slap this as an extra componont so to enable stuff to be dragged
-    private DraggableObject draggableObject;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void OnMouseDown()
     {
-        startPosition = transform.position;
-        isClicked = false;
-        thiscollider = GetComponent<Collider2D>();
-        isPlated = false;
-        draggableObject = GetComponent<DraggableObject>();
+        if (food == null || heldObj != null) return;
+
+        // Spawn the held food sprite object
+        heldObj = new GameObject("Held_" + food.foodName);
+
+        var sr = heldObj.AddComponent<SpriteRenderer>();
+        sr.sprite = food.unplatedFoodSprite;
+        sr.sortingOrder = 69; // render above everything
+
+        //lucas drag script
+        draggable = heldObj.AddComponent<DraggableObject>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //if it's not plated, then check for mouse button down and such
-        //if its plated then dont cause u cant move it anymore
-        //same logic goes for the onmousedrag part
-        if (!isPlated)
+        if (heldObj != null)
         {
-            if (Input.GetMouseButton(0))
+            // call drag script
+            draggable.DragObject();
+
+            // Release check
+            if (Input.GetMouseButtonUp(0))
             {
-                //raycast from mouse position and see if it click object
-                Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit2D hit = Physics2D.Raycast(mouseRay.origin, mouseRay.direction);
-                if (hit.collider == thiscollider)
-                {
-                    isClicked = true;
-                }
-                else
-                {
-                    isClicked = false;
-                }
-            }
-            else if (Input.GetMouseButtonUp(0))
-            {
-                //if it wasnt dropped on the plate then put it back at the start
-                if (!IsTouchingMouse(plate))
-                {
-                    transform.position = startPosition;
-                }
-                else
-                {
-                    //i realised that if i didnt check if its the object clicked then
-                    //both objects would be clicked. so this is just to check for
-                    //the actual objec being clicked
-                    //tbh the mouse code could probably be moved to another file but
-                    if (isClicked)
-                    {
-                        food.Plate(this.gameObject);
-                        isPlated = true;
-                        transform.position = plate.transform.position;
-                        //plate food (prevent further movement) and snap to plate position
-                        //the last line about transform.position can be changed as desired 
-                        //for different food snapping once we have the actual plate sprite and we're
-                        //arranging the food
-                    }
-                }
+                TryPlaceFood(heldObj.transform.position);
+                Destroy(heldObj);
+                heldObj = null;
+                draggable = null;
             }
         }
     }
 
-    void OnMouseDrag()
+    void TryPlaceFood(Vector3 dropPosition)
     {
-        if (!isPlated)
+        Collider2D hit = Physics2D.OverlapPoint(dropPosition);
+        if (hit != null)
         {
-            draggableObject.DragObject();
+            FoodTarget target = hit.GetComponent<FoodTarget>();
+            if (target != null)
+            {
+                target.ReceiveFood(food);
+            }
         }
-
     }
-
-    //code that checks for if the mouse is inside the plate's collider area
-    public bool IsTouchingMouse(GameObject g)
-    {
-        Vector2 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        return g.GetComponent<Collider2D>().OverlapPoint(point);
-    }
-
-
 }

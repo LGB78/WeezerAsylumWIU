@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 22bb80c99322b11468e7dea86115f3cd
+guid: 56c180f90fc0f194e83185d250a96102
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4089810013930393946
-    second: plated rice_0
+      213: -8409239573254114549
+    second: heldrice_0
+  - first:
+      213: 4621288174910290022
+    second: heldrice_1
+  - first:
+      213: -6239638337418690645
+    second: heldrice_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: plated rice_0
+      name: heldrice_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 20
-        width: 48
-        height: 26
+        x: 16
+        y: 24
+        width: 29
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a511827f98ce1c830800000000000000
-      internalID: 4089810013930393946
+      spriteID: b03f70589216c4b80800000000000000
+      internalID: -8409239573254114549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heldrice_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 23
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668bd364c1d122040800000000000000
+      internalID: 4621288174910290022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heldrice_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 16
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafff3bbdf95869a0800000000000000
+      internalID: -6239638337418690645
       vertices: []
       indices: 
       edges: []
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      plated rice_0: 4089810013930393946
+      heldrice_0: -8409239573254114549
+      heldrice_1: 4621288174910290022
+      heldrice_2: -6239638337418690645
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
