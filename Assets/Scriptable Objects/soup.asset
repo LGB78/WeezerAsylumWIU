@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: soup
   m_EditorClassIdentifier: 
   foodName: sup
-  foodDescription: 
-  unplatedFoodSprite: {fileID: 0}
-  platedFoodSprite: {fileID: 0}
-  isEdible: 0
+  foodDescription: soup
+  unplatedFoodSprite: {fileID: 1544821379914443155, guid: b8dff3a5d65c1d545ac23a22405f84ff, type: 3}
+  platedFoodSprite: {fileID: 1544821379914443155, guid: b8dff3a5d65c1d545ac23a22405f84ff, type: 3}
+  isEdible: 1

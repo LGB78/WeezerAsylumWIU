@@ -4,6 +4,7 @@ public class FoodTarget : MonoBehaviour
 {
     public Transform foodContainer; // optional parent for spawned food sprites
     public float SpawnY = 0.28f;
+    public float SpawnX = 0f;
 
     void Awake()
     {
@@ -23,6 +24,7 @@ public class FoodTarget : MonoBehaviour
             // Position it above the plate (y+1 for now)
             Vector3 pos = transform.position;
             pos.y += SpawnY;
+            pos.x += SpawnX;
             newFood.transform.position = pos;
 
             // Add sprite renderer
