@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 57f8be42b153a6c4681c294c3055e133
+guid: e4a5eadb0d46c1f44929c17c73e8a1ca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6050386417033336489
-    second: yes cook_0
+      213: -8283191065794494976
+    second: indiangirl_0
+  - first:
+      213: 5822512952225155598
+    second: indiangirl_1
+  - first:
+      213: 4271050644276375845
+    second: indiangirl_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +52,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -74,7 +80,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: yes cook_0
+      name: indiangirl_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 40
-        height: 40
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75921ea2c95b80ca0800000000000000
-      internalID: -6050386417033336489
+      spriteID: 00e31a4ac913c0d80800000000000000
+      internalID: -8283191065794494976
       vertices: []
       indices: 
       edges: []
@@ -138,7 +144,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 1ee5e55b4f78e8048acffdd9116b6929
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +154,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      yes cook_0: -6050386417033336489
+      indiangirl_0: -8283191065794494976
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
