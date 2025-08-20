@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEditor.Rendering;
 using UnityEngine;
@@ -14,6 +15,12 @@ public class Customer : MonoBehaviour
     public Sprite[] shirt;
     [SerializeField] SpriteRenderer bodyrenderer;
     [SerializeField] SpriteRenderer shirtrenderer;
+    //by marrrvvvv :3333
+    [SerializeField] FoodItem[] foods;
+    [SerializeField] FoodItem rice;
+    [SerializeField] foodorder order;
+    [SerializeField] TMP_Text dialog;
+    private int ordersize = 5;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,22 +39,34 @@ public class Customer : MonoBehaviour
         bodyrenderer.sprite = body[UnityEngine.Random.Range(0, body.Length)];
         shirtrenderer.sprite = shirt[UnityEngine.Random.Range(0, shirt.Length)];
         //hi marv if youre reading this this part is where you spawn the customer requsts
-        //like you do the rng stuff here ok?
-        //ik itll be hard and allat but gllll feel free to ask me for help - lucar
+        //hi lucars this is mars 
+        for (int i = order.order.Count - 1; i >= 0; i--)
+        {
+            order.order.RemoveAt(i);//remove all items
+        }
 
-        //render text mesh pro thing where u like have the items be the name of the thing??????
-        TMP_Text dialogue;
+        for (int i =0; i<ordersize; i++) //for loop for randomize order
+        {
+            int foodid = UnityEngine.Random.Range(0, foods.Length); //choose random food
+            if (i == 0)
+            {//force rice for item 1
+                order.order.Add(rice);
+                continue; //next item immediately
+            }
+            if (i > 1)//if not first 2 items, chance to have nothing
+            {
+                if (UnityEngine.Random.Range(0, 2)==0)//50% nothing
+                    continue;
 
-        dialogue = GetComponent<TMP_Text>();
-        dialogue.text = "test";
-        //like how my 2dgeng had the item be like ironshackle and shit
-        //base dialogue: "I want..."
-        //also once they pick nothing on any option, they stop all later stuff
-        //(etc orders nothing on line 2, end there)
-        //1-> 90% rice, 10% [random meat]
-        //2->80% [random meat], 20% nothing
-        //3-> 80% cucumber 20% nothing
-        //4-> 50% extra [anything]
-        //5 -> 25% extra [anything but rice]
+            }
+            order.order.Add(foods[foodid]);//add item to order
+        }
+        //dialog.text = i want order.order[0] and order.order [1]
+        string ordertext = "I want " + order.order[0].foodName;
+        for (int i = 1; i < order.order.Count; i++)
+        {
+            ordertext += " and " + order.order[i].foodName;
+        }
+        dialog.text = ordertext;
     }
 }
