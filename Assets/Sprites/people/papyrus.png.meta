@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: f7f548cd2fa0c7440acc84698c19b8b3
+guid: 0c5fdecb254b40a4cabc0778f43d5524
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6946863713267814212
-    second: stickingoutmygyattforthekrissler_0
+      213: -87414096519365701
+    second: papyrus_0
+  - first:
+      213: -4530236087048174276
+    second: papyrus_1
+  - first:
+      213: -905230611607735506
+    second: papyrus_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,23 +119,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stickingoutmygyattforthekrissler_0
+      name: papyrus_0
       rect:
         serializedVersion: 2
-        x: 25
+        x: 0
         y: 0
-        width: 78
-        height: 66
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cb0fe934248c79f90800000000000000
-      internalID: -6946863713267814212
+      spriteID: 51a98b2c2ba9c444d915edaecdabee5d
+      internalID: 1397592014
       vertices: []
       indices: 
       edges: []
@@ -138,7 +144,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: baf98d447c9545443bf293d430aa55af
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +154,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      stickingoutmygyattforthekrissler_0: -6946863713267814212
+      papyrus_0: 1397592014
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

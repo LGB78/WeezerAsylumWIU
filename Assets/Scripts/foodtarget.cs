@@ -26,7 +26,10 @@ public class FoodTarget : MonoBehaviour
         // Spawn new instance
         GameObject newFood = new GameObject(food.foodName);
         newFood.transform.SetParent(foodContainer);
+
+
         var selfcollider = newFood.AddComponent<BoxCollider2D>();
+        selfcollider.isTrigger = true;
         selfcollider.size = new Vector2(2.1f, 1f);
         var parentscript = foodreference.GetComponent<TestFood>();
         var selfscript = newFood.AddComponent<TestFood>();

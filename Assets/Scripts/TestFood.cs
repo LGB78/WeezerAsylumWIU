@@ -8,9 +8,10 @@ public class TestFood : MonoBehaviour
     private GameObject heldObj;          // temporary sprite following the mouse
     private DraggableObject draggable;   // reference to draggable component
     private FoodItem activeFood;
-    static public bool isKnifeHeld;
+    public bool isKnifeHeld;
+    private Bounds bounds;
 
-    void OnMouseDown()
+    void clickfood()
     {
         if (food == null || heldObj != null || isKnifeHeld == true) return;
         
@@ -32,10 +33,20 @@ public class TestFood : MonoBehaviour
     {
         activeFood = food;
         isKnifeHeld = false;
+        bounds = GetComponent<Collider2D>().bounds;
     }
 
     void Update()
     {
+        Vector2 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (bounds != null)
+        {
+            if (bounds.Contains(point) && heldObj == null && Input.GetMouseButtonDown(0))
+            {
+                clickfood();
+            }
+        }
+        
         if (heldObj != null)
         {
             // call drag script

@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -122,10 +122,10 @@ TextureImporter:
       name: them_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 57
-        width: 72
-        height: 71
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,55 +140,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: them_1
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 0
-        width: 14
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 387ac809c2d611720800000000000000
-      internalID: 2815151280254396291
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: them_2
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 0
-        width: 14
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a41eefe1162101570800000000000000
-      internalID: 8435262310406086986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a5ceb307970375c428195e360f512fee
     internalID: 0
     vertices: []
     indices: 
@@ -199,8 +155,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       them_0: -5712424805676672784
-      them_1: 2815151280254396291
-      them_2: 8435262310406086986
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
