@@ -26,6 +26,6 @@ public class FoodTarget : MonoBehaviour
 
         SpriteRenderer sr = newFood.AddComponent<SpriteRenderer>();
         sr.sprite = food.platedFoodSprite;
-        sr.sortingOrder = 69;
+        sr.sortingOrder = food.sortingOrder;
     }
 }
