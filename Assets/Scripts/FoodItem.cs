@@ -14,4 +14,6 @@ public class FoodItem : ScriptableObject
 
     public Vector2 spawnOffset;
     public int sortingOrder = 69;
+
+    public Vector2 stackOffset = new Vector2(0, 0.05f);
 }
