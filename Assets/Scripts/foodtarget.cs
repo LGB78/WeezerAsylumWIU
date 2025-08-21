@@ -30,7 +30,7 @@ public class FoodTarget : MonoBehaviour
 
         var selfcollider = newFood.AddComponent<BoxCollider2D>();
         selfcollider.isTrigger = true;
-        //selfcollider.size = new Vector2(2.1f, 1f);
+        selfcollider.size = new Vector2(2.1f, 1f);
         var parentscript = foodreference.GetComponent<TestFood>();
         var selfscript = newFood.AddComponent<TestFood>();
         selfscript.food = parentscript.food;
