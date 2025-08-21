@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 93082f7011ca84545a5ba28ae96584e5
+guid: 8193a2f40ec9ec34d98baabf142529d3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4200988057591366383
-    second: roasted chicken cut_0
+      213: -6762389404108127251
+    second: duckCut_0
   - first:
-      213: -9210277553397351363
-    second: roasted chicken cut_1
+      213: -2589374762909217239
+    second: duckCut_1
   - first:
-      213: 7432305845797989321
-    second: roasted chicken cut_2
+      213: 7318521978756770943
+    second: duckCut_2
   - first:
-      213: 250225527536156588
-    second: roasted chicken cut_3
-  - first:
-      213: -1067874637479483901
-    second: roasted chicken cut_4
+      213: 142154167431740283
+    second: duckCut_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,12 +122,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: roasted chicken cut 1_0
+      name: duckCut_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 46
+        x: 1
+        y: 15
+        width: 61
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -138,10 +135,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9faee35eecbac3e48bd6ab1a8d0128aa
-      internalID: -1749256269
+      spriteID: de305476aaa2722a0800000000000000
+      internalID: -6762389404108127251
       vertices: []
       indices: 
       edges: []
@@ -150,7 +147,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 0f869964945db574b8956a4b59cdde06
     internalID: 0
     vertices: []
     indices: 
@@ -160,7 +157,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      roasted chicken cut 1_0: -1749256269
+      duckCut_0: -6762389404108127251
+      duckCut_1: -2589374762909217239
+      duckCut_2: 7318521978756770943
+      duckCut_3: 142154167431740283
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b21df37d64f2824e98032c7c71a530a, type: 3}
-  m_Name: RiceFooditem
+  m_Name: charsiewCut
   m_EditorClassIdentifier: 
-  foodName: 
+  foodName: char char binks
   foodDescription: 
-  unplatedFoodSprite: {fileID: -4795573259988461060, guid: 56c180f90fc0f194e83185d250a96102, type: 3}
-  platedFoodSprite: {fileID: 0}
-  isEdible: 0
+  unplatedFoodSprite: {fileID: -4254275708818956989, guid: 75fa1a8151ef86a4c92c3429359c5146, type: 3}
+  platedFoodSprite: {fileID: 2339102584366189087, guid: 53476e10a6968bb43bfb7b9234bb0747, type: 3}
+  isEdible: 1
+  isCuttable: 0
+  spawnOffset: {x: 0, y: 0}
+  sortingOrder: 69

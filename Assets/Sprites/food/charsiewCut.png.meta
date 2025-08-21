@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 93082f7011ca84545a5ba28ae96584e5
+guid: 75fa1a8151ef86a4c92c3429359c5146
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4200988057591366383
-    second: roasted chicken cut_0
-  - first:
-      213: -9210277553397351363
-    second: roasted chicken cut_1
-  - first:
-      213: 7432305845797989321
-    second: roasted chicken cut_2
-  - first:
-      213: 250225527536156588
-    second: roasted chicken cut_3
-  - first:
-      213: -1067874637479483901
-    second: roasted chicken cut_4
+      213: -4254275708818956989
+    second: charsiewCut_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: roasted chicken cut 1_0
+      name: charsiewCut_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 46
-        height: 32
+        x: 7
+        y: 15
+        width: 51
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9faee35eecbac3e48bd6ab1a8d0128aa
-      internalID: -1749256269
+      spriteID: 34dd54f68c6c5f4c0800000000000000
+      internalID: -4254275708818956989
       vertices: []
       indices: 
       edges: []
@@ -150,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      roasted chicken cut 1_0: -1749256269
+      charsiewCut_0: -4254275708818956989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
