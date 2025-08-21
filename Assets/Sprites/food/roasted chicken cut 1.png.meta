@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -86,7 +86,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -125,111 +125,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: roasted chicken cut_0
+      name: roasted chicken cut 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 5
-        width: 14
-        height: 11
+        y: 0
+        width: 46
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fe2446e6168ec4a30800000000000000
-      internalID: 4200988057591366383
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roasted chicken cut_1
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 1
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d3c3ff20d558e2080800000000000000
-      internalID: -9210277553397351363
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roasted chicken cut_2
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 4
-        width: 10
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9cb29d8e9cad42760800000000000000
-      internalID: 7432305845797989321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roasted chicken cut_3
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 5
-        width: 9
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: caff682aacaf87300800000000000000
-      internalID: 250225527536156588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roasted chicken cut_4
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 1
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 306e260dca52e21f0800000000000000
-      internalID: -1067874637479483901
+      spriteID: 9faee35eecbac3e48bd6ab1a8d0128aa
+      internalID: -1749256269
       vertices: []
       indices: 
       edges: []
@@ -238,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -248,11 +160,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      roasted chicken cut_0: 4200988057591366383
-      roasted chicken cut_1: -9210277553397351363
-      roasted chicken cut_2: 7432305845797989321
-      roasted chicken cut_3: 250225527536156588
-      roasted chicken cut_4: -1067874637479483901
+      roasted chicken cut 1_0: -1749256269
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

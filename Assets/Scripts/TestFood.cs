@@ -5,14 +5,15 @@ public class TestFood : MonoBehaviour
     public FoodItem food;                // assign which food this source gives
     public FoodItem foodCut;
 
-    private GameObject heldObj;          // temporary sprite following the mouse
+    public GameObject heldObj;          // temporary sprite following the mouse
     private DraggableObject draggable;   // reference to draggable component
     public FoodItem activeFood;
+    public bool isKnifeHeld;
 
     void OnMouseDown()
     {
-        if (food == null || heldObj != null) return;
-
+        if (food == null || heldObj != null || isKnifeHeld == true) return;
+        
         // Spawn the held food sprite object
         heldObj = new GameObject("Held_" + food.foodName);
 
@@ -27,9 +28,10 @@ public class TestFood : MonoBehaviour
         draggable = heldObj.AddComponent<DraggableObject>();
     }
 
-    private void Start()
+    private void Awake()
     {
         activeFood = food;
+        isKnifeHeld = false;
     }
 
     void Update()
@@ -48,7 +50,6 @@ public class TestFood : MonoBehaviour
                 draggable = null;
             }
         }
-
     }
 
     private void TryPlaceFood(GameObject thefood)
@@ -67,5 +68,8 @@ public class TestFood : MonoBehaviour
         }
     }
 
-
+    public void KnifeHold(bool isHold)
+    {
+        isKnifeHeld = isHold;
+    }
 }

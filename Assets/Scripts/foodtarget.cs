@@ -17,7 +17,14 @@ public class FoodTarget : MonoBehaviour
 
         GameObject newFood = new GameObject(food.foodName);
         newFood.transform.SetParent(foodContainer);
-        newFood.AddComponent<Collider2D>();
+        var selfcollider = newFood.AddComponent<BoxCollider2D>();
+        selfcollider.size = new Vector2(2.1f, 1f);
+        var parentscript = foodreference.GetComponent<TestFood>();
+        var selfscript = newFood.AddComponent<TestFood>();
+        selfscript.food = parentscript.food;
+        selfscript.foodCut = parentscript.foodCut;
+        selfscript.KnifeHold(true);
+        Debug.Log(selfscript.isKnifeHeld);
 
         // Apply offset from FoodItem
         Vector3 pos = transform.position;

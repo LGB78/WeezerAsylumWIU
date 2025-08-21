@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodName: chimken
   foodDescription: 
-  unplatedFoodSprite: {fileID: 4200988057591366383, guid: 93082f7011ca84545a5ba28ae96584e5, type: 3}
+  unplatedFoodSprite: {fileID: -1749256269, guid: 93082f7011ca84545a5ba28ae96584e5, type: 3}
   platedFoodSprite: {fileID: -4993931312522414008, guid: 8fefe7bd5f3f87542ae08853532fdbc0, type: 3}
   isEdible: 1
   isCuttable: 0
+  spawnOffset: {x: 0, y: 0}
+  sortingOrder: 69
