@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b21df37d64f2824e98032c7c71a530a, type: 3}
-  m_Name: roastedchickenuncut
+  m_Name: roastedChicken
   m_EditorClassIdentifier: 
   foodName: chimken
   foodDescription: 

@@ -7,7 +7,7 @@ public class Knife : MonoBehaviour
     private Vector2 startPosition;
 
     public GameObject board;
-    public GameObject food;
+    private GameObject food;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,8 +30,8 @@ public class Knife : MonoBehaviour
                     food = board.transform.GetChild(0).GetChild(0).gameObject;
                     if (IsTouchingMouse(food))
                     {
-                        var foodrenderer = food.GetComponent<SpriteRenderer>();
-
+                        var foodobj = food.GetComponent<TestFood>();
+                        foodobj.activeFood = foodobj.foodCut;
                     }
                 }
             }

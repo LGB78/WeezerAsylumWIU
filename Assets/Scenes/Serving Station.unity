@@ -1041,8 +1041,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodContainer: {fileID: 1880841035}
-  SpawnY: 0.28
-  SpawnX: 0
   isBoard: 1
 --- !u!1 &519420028
 GameObject:
@@ -1329,8 +1327,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodContainer: {fileID: 560223153}
-  SpawnY: 0.5
-  SpawnX: 1
   isBoard: 0
 --- !u!1 &619394800
 GameObject:
@@ -1825,6 +1821,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   food: {fileID: 11400000, guid: 12824108103a5704c925f18eceb23528, type: 2}
+  foodCut: {fileID: 0}
+  activeFood: {fileID: 0}
 --- !u!1 &993926191
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,6 +2186,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   food: {fileID: 11400000, guid: a5af45920e5880f4db067320f80553da, type: 2}
+  foodCut: {fileID: 11400000, guid: eae961616c586df4fb2b4dcd075659e8, type: 2}
+  activeFood: {fileID: 0}
 --- !u!61 &1085535141
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2510,6 +2510,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   food: {fileID: 11400000, guid: 1c66f2c6890e513499ecd3861ee26515, type: 2}
+  foodCut: {fileID: 0}
+  activeFood: {fileID: 0}
 --- !u!61 &1142480817
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2795,8 +2797,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodContainer: {fileID: 2061144891}
-  SpawnY: 0.28
-  SpawnX: 0
   isBoard: 0
 --- !u!61 &1366007244
 BoxCollider2D:

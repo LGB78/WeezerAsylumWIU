@@ -3,8 +3,11 @@ using UnityEngine;
 public class TestFood : MonoBehaviour
 {
     public FoodItem food;                // assign which food this source gives
+    public FoodItem foodCut;
+
     private GameObject heldObj;          // temporary sprite following the mouse
     private DraggableObject draggable;   // reference to draggable component
+    public FoodItem activeFood;
 
     void OnMouseDown()
     {
@@ -16,9 +19,17 @@ public class TestFood : MonoBehaviour
         var sr = heldObj.AddComponent<SpriteRenderer>();
         sr.sprite = food.unplatedFoodSprite;
         sr.sortingOrder = 69; // render above everything
+        var srscript = heldObj.AddComponent<TestFood>();
+        srscript.food = food;
+        srscript.foodCut = foodCut;
 
         //lucas drag script
         draggable = heldObj.AddComponent<DraggableObject>();
+    }
+
+    private void Start()
+    {
+        activeFood = food;
     }
 
     void Update()
@@ -31,26 +42,27 @@ public class TestFood : MonoBehaviour
             // Release check
             if (Input.GetMouseButtonUp(0))
             {
-                TryPlaceFood(heldObj.transform.position);
+                TryPlaceFood(heldObj);
                 Destroy(heldObj);
                 heldObj = null;
                 draggable = null;
             }
         }
+
     }
 
-    private void TryPlaceFood(Vector3 dropPosition)
+    private void TryPlaceFood(GameObject thefood)
     {
-        Collider2D hit = Physics2D.OverlapPoint(dropPosition);
+        Collider2D hit = Physics2D.OverlapPoint(thefood.transform.position);
         if (hit != null)
         {
             FoodTarget target = hit.GetComponent<FoodTarget>();
             if (target != null)
             {
-                if (food.isCuttable && target.isBoard)
-                    target.ReceiveFood(food);
-                else if (!food.isCuttable && !target.isBoard)
-                    target.ReceiveFood(food);
+                if (activeFood.isCuttable && target.isBoard)
+                    target.ReceiveFood(food, thefood);
+                else if (!activeFood.isCuttable && !target.isBoard)
+                    target.ReceiveFood(food, thefood);
             }
         }
     }

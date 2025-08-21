@@ -11,12 +11,13 @@ public class FoodTarget : MonoBehaviour
             foodContainer = transform;
     }
 
-    public void ReceiveFood(FoodItem food)
+    public void ReceiveFood(FoodItem food, GameObject foodreference)
     {
         if (food == null) return;
 
         GameObject newFood = new GameObject(food.foodName);
         newFood.transform.SetParent(foodContainer);
+        newFood.AddComponent<Collider2D>();
 
         // Apply offset from FoodItem
         Vector3 pos = transform.position;
