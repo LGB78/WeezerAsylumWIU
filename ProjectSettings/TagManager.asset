@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Board
+  - BoardNTray
   - Water
   - UI
   - Knife
