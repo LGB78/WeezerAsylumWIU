@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: cucumber
   m_EditorClassIdentifier: 
   foodName: kukubert
-  foodDescription: 
-  unplatedFoodSprite: {fileID: 0}
-  platedFoodSprite: {fileID: 0}
-  isEdible: 0
+  foodDescription: kukumber
+  unplatedFoodSprite: {fileID: -5454209809488632693, guid: a0f5f9d51d6449e47a6a79e0a083ef46, type: 3}
+  platedFoodSprite: {fileID: -5454209809488632693, guid: a0f5f9d51d6449e47a6a79e0a083ef46, type: 3}
+  isEdible: 1
+  isCuttable: 0
+  spawnOffset: {x: -0.02, y: -0.047}
+  sortingOrder: 70
+  stackOffset: {x: -0.1, y: 0}
