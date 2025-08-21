@@ -655,6 +655,7 @@ GameObject:
   - component: {fileID: 380719211}
   - component: {fileID: 380719214}
   - component: {fileID: 380719213}
+  - component: {fileID: 380719215}
   m_Layer: 0
   m_Name: cleaver_0
   m_TagString: Untagged
@@ -744,6 +745,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7ec0c5423dc9249ae01fe0cfbf6f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  board: {fileID: 459408561}
+  onHold:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1047022050}
+        m_TargetAssemblyTypeName: TestFood, Assembly-CSharp
+        m_MethodName: KnifeHold
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onRelease:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1047022050}
+        m_TargetAssemblyTypeName: TestFood, Assembly-CSharp
+        m_MethodName: KnifeHold
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &380719214
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -790,6 +822,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.19, y: 0.47}
   m_EdgeRadius: 0
+--- !u!114 &380719215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380719210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 215f26801bbd4554eb24f8847293d5f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: {x: 0, y: 0}
 --- !u!1 &456554328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,6 +1678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   food: {fileID: 11400000, guid: 2a18ec1e5e225d24eb765a1c05f29bf9, type: 2}
+  foodCut: {fileID: 0}
 --- !u!1 &848578729
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,6 +1914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   food: {fileID: 11400000, guid: 12824108103a5704c925f18eceb23528, type: 2}
+  foodCut: {fileID: 0}
 --- !u!1 &993926191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,6 +2012,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1047022049}
   - component: {fileID: 1047022048}
+  - component: {fileID: 1047022051}
+  - component: {fileID: 1047022050}
   m_Layer: 0
   m_Name: charsiew
   m_TagString: Untagged
@@ -2037,11 +2086,71 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.016670555, y: 0.0799989, z: 0}
-  m_LocalScale: {x: 1.0556334, y: 1.1229335, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.20468733, y: 0.21773681, z: 0.1939}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2065541357}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1047022050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047022047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dd97afa8f6898a44b825a3815e1a1b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  food: {fileID: 11400000, guid: ecb95b742141faa49be65ebe36437dd7, type: 2}
+  foodCut: {fileID: 11400000, guid: 91e4f701509a69e4f8b5396cf4296286, type: 2}
+--- !u!61 &1047022051
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047022047}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.05, y: 1.35}
+    newSize: {x: 0.61, y: 0.27}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.05, y: 1.35}
+  m_EdgeRadius: 0
 --- !u!1 &1067194094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2231,6 +2340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   food: {fileID: 11400000, guid: a5af45920e5880f4db067320f80553da, type: 2}
+  foodCut: {fileID: 0}
 --- !u!61 &1085535141
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2553,6 +2663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   food: {fileID: 11400000, guid: 1c66f2c6890e513499ecd3861ee26515, type: 2}
+  foodCut: {fileID: 0}
 --- !u!61 &1142480817
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3852,6 +3963,7 @@ MonoBehaviour:
   - {fileID: 218981383, guid: 892754a541cbaa241846951fcf5d9f65, type: 3}
   - {fileID: -2100409947, guid: ac711996b358e3745b67205ffe837992, type: 3}
   - {fileID: 2243605537710179018, guid: 04b708a2309d4424f81314dbaf6e9ab4, type: 3}
+  - {fileID: -5712424805676672784, guid: a13c4a0003cb0d94a93fefd077a40cee, type: 3}
   shirt:
   - {fileID: -7579585060909877998, guid: 1fc5af2313a02e546aa5934bac8e02eb, type: 3}
   - {fileID: -6336812090102057917, guid: 9347ce079cc718d4a85186cddacfe78b, type: 3}
@@ -3860,6 +3972,7 @@ MonoBehaviour:
   - {fileID: 1217991748134601033, guid: 94e6c684b9e7f8d4ebd64f5d2231d139, type: 3}
   - {fileID: -450587240783025760, guid: f0aef15f76f67fb4e93bd510ee133d9d, type: 3}
   - {fileID: -3769715052432912009, guid: c33679bd671dd0344b3f490c19227877, type: 3}
+  - {fileID: -6946863713267814212, guid: f7f548cd2fa0c7440acc84698c19b8b3, type: 3}
   bodyrenderer: {fileID: 209451420}
   shirtrenderer: {fileID: 993926192}
   foods:

@@ -8,7 +8,7 @@ public class TestFood : MonoBehaviour
     private GameObject heldObj;          // temporary sprite following the mouse
     private DraggableObject draggable;   // reference to draggable component
     private FoodItem activeFood;
-    private bool isKnifeHeld;
+    static public bool isKnifeHeld;
 
     void OnMouseDown()
     {
