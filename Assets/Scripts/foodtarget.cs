@@ -15,6 +15,8 @@ public class FoodTarget : MonoBehaviour
     {
         if (food == null) return;
 
+        if (transform.childCount > 0 && gameObject.tag == "board") return;
+
         // Count how many of the same food type already exist
         int sameFoodCount = 0;
         foreach (Transform child in foodContainer)
@@ -30,12 +32,10 @@ public class FoodTarget : MonoBehaviour
 
         var selfcollider = newFood.AddComponent<BoxCollider2D>();
         selfcollider.isTrigger = true;
-        selfcollider.size = new Vector2(2.1f, 1f);
         var parentscript = foodreference.GetComponent<TestFood>();
         var selfscript = newFood.AddComponent<TestFood>();
         selfscript.food = parentscript.food;
         selfscript.foodCut = parentscript.foodCut;
-        selfscript.KnifeHold(true);
 
         // Apply offset from FoodItem + stacking offset per duplicate
         Vector3 pos = transform.position;
@@ -47,7 +47,13 @@ public class FoodTarget : MonoBehaviour
         SpriteRenderer sr = newFood.AddComponent<SpriteRenderer>();
         sr.sprite = food.platedFoodSprite;
 
+        //hihi lucas here the collider size here i decided to set to the sprite size
+        selfcollider.size = selfcollider.gameObject.GetComponent<SpriteRenderer>().size;
+        selfscript.isKnifeHeld = parentscript.isKnifeHeld;//same with this where i set the knife held stuff
         // Sorting order increases with each duplicate
         sr.sortingOrder = food.sortingOrder + sameFoodCount;
+        //and then here we update the bounds of the testfood
+        selfscript.getbounds();
+        selfscript.activeFood = selfscript.food;//set the active food too
     }
 }

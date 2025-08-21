@@ -5,35 +5,39 @@ public class TestFood : MonoBehaviour
     public FoodItem food;                // assign which food this source gives
     public FoodItem foodCut;
 
-    private GameObject heldObj;          // temporary sprite following the mouse
+    public GameObject heldObj;          // temporary sprite following the mouse
     private DraggableObject draggable;   // reference to draggable component
-    private FoodItem activeFood;
-    public bool isKnifeHeld;
+    public FoodItem activeFood;
+    public BoolSO isKnifeHeld;      //sorry julian i kinda changed your isheld for each of these scripts to a scriptable obj
     private Bounds bounds;
 
     void clickfood()
     {
-        if (food == null || heldObj != null || isKnifeHeld == true) return;
+        if (food == null || heldObj != null || isKnifeHeld.value == true) return;
         
         // Spawn the held food sprite object
         heldObj = new GameObject("Held_" + food.foodName);
 
         var sr = heldObj.AddComponent<SpriteRenderer>();
-        sr.sprite = food.unplatedFoodSprite;
+        sr.sprite = activeFood.unplatedFoodSprite;
         sr.sortingOrder = 69; // render above everything
         var srscript = heldObj.AddComponent<TestFood>();
-        srscript.food = food;
+        srscript.food = activeFood;
         srscript.foodCut = foodCut;
+        srscript.isKnifeHeld = isKnifeHeld;//i added this line to carry the boolso over
 
+        srscript.enabled = true;
+        srscript.activeFood = activeFood;
         //lucas drag script
         draggable = heldObj.AddComponent<DraggableObject>();
     }
 
+ 
+
     private void Awake()
     {
         activeFood = food;
-        isKnifeHeld = false;
-        bounds = GetComponent<Collider2D>().bounds;
+        getbounds();
     }
 
     void Update()
@@ -43,6 +47,11 @@ public class TestFood : MonoBehaviour
         {
             if (bounds.Contains(point) && heldObj == null && Input.GetMouseButtonDown(0))
             {
+                //disable sprite renderer to pretend that you took it off, while also keeping this code active so that the moving code works
+                if (transform.parent.gameObject.tag == "board" && isKnifeHeld.value == false)
+                {
+                    gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                }
                 clickfood();
             }
         }
@@ -59,6 +68,8 @@ public class TestFood : MonoBehaviour
                 Destroy(heldObj);
                 heldObj = null;
                 draggable = null;
+                //reenable sprite renderer since if its on cutting board object sprite renderer is disabled
+                gameObject.GetComponent<SpriteRenderer>().enabled = true;
             }
         }
     }
@@ -73,18 +84,25 @@ public class TestFood : MonoBehaviour
             FoodTarget target = hit.GetComponent<FoodTarget>();
             if (target != null)
             {
-                if (activeFood.isCuttable && target.isBoard)
-                    target.ReceiveFood(food, thefood);
-                else if (!activeFood.isCuttable && !target.isBoard)
-                    target.ReceiveFood(food, thefood);
+                //used the heldobj activefood here to make it more accurate
+                if (thefood.GetComponent<TestFood>().activeFood.isCuttable && target.isBoard)
+                {
+                    target.ReceiveFood(activeFood, thefood);
+                }
+                else if (!thefood.GetComponent<TestFood>().activeFood.isCuttable && !target.isBoard)
+                {
+                    target.ReceiveFood(activeFood, thefood);
+                    //delete object if its a cutting board object
+                    if (gameObject.transform.parent.gameObject.tag == "board")
+                    {
+                        Destroy(gameObject);
+                    }
+                }
             }
         }
     }
 
-    public void KnifeHold(bool isHold)
-    {
-        isKnifeHeld = isHold;
-    }
+    //deleted knifehold function sorry
 
     public void SetActiveFood(FoodItem newActive)
     {
@@ -94,5 +112,10 @@ public class TestFood : MonoBehaviour
     public Sprite GetUnplatedSprite()
     {
         return activeFood.unplatedFoodSprite;
+    }
+    //get bounds component again
+    public void getbounds()
+    {
+        bounds = GetComponent<Collider2D>().bounds;
     }
 }

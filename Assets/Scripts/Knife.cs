@@ -8,8 +8,7 @@ public class Knife : MonoBehaviour
     private Vector2 startPosition;
 
     public GameObject board;
-    public UnityEvent onHold;
-    public UnityEvent onRelease;
+    public BoolSO isknifeheld;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -58,9 +57,9 @@ public class Knife : MonoBehaviour
                 //put down so isclicked set back to true
                 isClicked = true;
                 //if theres shit on the board's foodcontainer then ya
-                if (board.transform.GetChild(0).GetChild(0) != null)
+                if (board.transform.GetChild(0) != null)
                 {
-                    var food = board.transform.GetChild(0).GetChild(0).gameObject;
+                    var food = board.transform.GetChild(0).gameObject;
                     //if mouse is touching food (on the click)
                     if (IsTouchingMouse(food))
                     {
@@ -83,7 +82,7 @@ public class Knife : MonoBehaviour
             else
             {
                 transform.position = startPosition;
-                onRelease.Invoke();
+                isknifeheld.value = false;
             }
         }
         //if isclicked then the knife is being held
@@ -93,7 +92,7 @@ public class Knife : MonoBehaviour
         //if isknifeheld is true then the object when clicked wont spawn another food obj
         else
         {
-            onHold.Invoke();
+            isknifeheld.value = true;
         }
     }
 }
