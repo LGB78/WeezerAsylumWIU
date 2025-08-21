@@ -24,7 +24,6 @@ public class FoodTarget : MonoBehaviour
         selfscript.food = parentscript.food;
         selfscript.foodCut = parentscript.foodCut;
         selfscript.KnifeHold(true);
-        Debug.Log(selfscript.isKnifeHeld);
 
         // Apply offset from FoodItem
         Vector3 pos = transform.position;

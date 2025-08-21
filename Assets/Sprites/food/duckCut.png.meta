@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 1f2b28f325f94314a9f991a070cb3b59
+guid: 8193a2f40ec9ec34d98baabf142529d3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6982564008495590550
-    second: Sprite-0001 (1)_0
+      213: -6762389404108127251
+    second: duckCut_0
+  - first:
+      213: -2589374762909217239
+    second: duckCut_1
+  - first:
+      213: 7318521978756770943
+    second: duckCut_2
+  - first:
+      213: 142154167431740283
+    second: duckCut_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0001 (1)_0
+      name: duckCut_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 18
+        x: 1
+        y: 15
         width: 61
-        height: 27
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69caec378fc07e060800000000000000
-      internalID: 6982564008495590550
+      spriteID: de305476aaa2722a0800000000000000
+      internalID: -6762389404108127251
       vertices: []
       indices: 
       edges: []
@@ -138,7 +147,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0f869964945db574b8956a4b59cdde06
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +157,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sprite-0001 (1)_0: 6982564008495590550
+      duckCut_0: -6762389404108127251
+      duckCut_1: -2589374762909217239
+      duckCut_2: 7318521978756770943
+      duckCut_3: 142154167431740283
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

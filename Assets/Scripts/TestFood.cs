@@ -5,10 +5,10 @@ public class TestFood : MonoBehaviour
     public FoodItem food;                // assign which food this source gives
     public FoodItem foodCut;
 
-    public GameObject heldObj;          // temporary sprite following the mouse
+    private GameObject heldObj;          // temporary sprite following the mouse
     private DraggableObject draggable;   // reference to draggable component
-    public FoodItem activeFood;
-    public bool isKnifeHeld;
+    private FoodItem activeFood;
+    private bool isKnifeHeld;
 
     void OnMouseDown()
     {
@@ -71,5 +71,15 @@ public class TestFood : MonoBehaviour
     public void KnifeHold(bool isHold)
     {
         isKnifeHeld = isHold;
+    }
+
+    public void SetActiveFood(FoodItem newActive)
+    {
+        activeFood = newActive;
+    }
+
+    public Sprite GetUnplatedSprite()
+    {
+        return activeFood.unplatedFoodSprite;
     }
 }

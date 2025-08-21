@@ -75,8 +75,8 @@ public class Knife : MonoBehaviour
                         //the problem is that activefood isnt being set to foodcut
                         //which leads me to believe that IsTouchingMouse(food) isn't working
                         //but idk why
-                        foodobj.activeFood = foodobj.foodCut;
-                        foodrenderer.sprite = foodobj.activeFood.unplatedFoodSprite;
+                        foodobj.SetActiveFood(foodobj.foodCut);
+                        foodrenderer.sprite = foodobj.GetUnplatedSprite();
                     }
                 }
             }
