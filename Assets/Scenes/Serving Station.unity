@@ -232,7 +232,7 @@ Transform:
   m_GameObject: {fileID: 183956005}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.885, y: 0.047, z: -0.05557486}
+  m_LocalPosition: {x: 0.912, y: -0.022, z: -0.05557486}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -355,7 +355,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: -764246737, guid: c92e3e32c08683f4aaa2b8292767506e, type: 3}
+  m_Sprite: {fileID: 1397592014, guid: 0c5fdecb254b40a4cabc0778f43d5524, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3549,7 +3549,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 500 cigarettes
+  m_text: 'femboy twinky balls
+
+    femboy twinky balls'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 29a8540ee304aed49b8e70b555128631, type: 2}
   m_sharedMaterial: {fileID: 8942175538618471881, guid: 29a8540ee304aed49b8e70b555128631, type: 2}
@@ -3970,6 +3972,7 @@ MonoBehaviour:
   - {fileID: 2243605537710179018, guid: 04b708a2309d4424f81314dbaf6e9ab4, type: 3}
   - {fileID: -5712424805676672784, guid: a13c4a0003cb0d94a93fefd077a40cee, type: 3}
   - {fileID: 1397592014, guid: 0c5fdecb254b40a4cabc0778f43d5524, type: 3}
+  - {fileID: 269800262637768828, guid: f79cc4f8c2692d142829c7f8343553fc, type: 3}
   shirt:
   - {fileID: -7579585060909877998, guid: 1fc5af2313a02e546aa5934bac8e02eb, type: 3}
   - {fileID: -6336812090102057917, guid: 9347ce079cc718d4a85186cddacfe78b, type: 3}
