@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b21df37d64f2824e98032c7c71a530a, type: 3}
-  m_Name: roastedchicken
+  m_Name: roastedChickenCut
   m_EditorClassIdentifier: 
   foodName: chimken
   foodDescription: 
-  unplatedFoodSprite: {fileID: 7300445918034196877, guid: 5c52a63a0546b584eb657db76b7c5629, type: 3}
-  platedFoodSprite: {fileID: 7300445918034196877, guid: 5c52a63a0546b584eb657db76b7c5629, type: 3}
+  unplatedFoodSprite: {fileID: 4200988057591366383, guid: 93082f7011ca84545a5ba28ae96584e5, type: 3}
+  platedFoodSprite: {fileID: -4993931312522414008, guid: 8fefe7bd5f3f87542ae08853532fdbc0, type: 3}
   isEdible: 1
-  isCuttable: 1
+  isCuttable: 0
