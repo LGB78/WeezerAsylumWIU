@@ -19,7 +19,28 @@ public class Knife : MonoBehaviour
         startPosition = transform.position;
     }
 
-    private void OnMouseDown()
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (isClicked)
+        {
+            draggable.DragObject();
+        }
+        if (Input.GetMouseButtonDown(0) && IsTouchingMouse(gameObject))
+        {
+            KnifeUse();
+        }
+    }
+
+    public bool IsTouchingMouse(GameObject obj)
+    {
+        Vector2 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Bounds bounds = obj.GetComponent<Collider2D>().bounds;
+        return bounds.Contains(point);
+    }
+
+    private void KnifeUse()
     {
         // allow toggling of isclicked to allow knife to be dragged 
         //without having to hold down left mouse button
@@ -37,7 +58,7 @@ public class Knife : MonoBehaviour
                 //put down so isclicked set back to true
                 isClicked = true;
                 //if theres shit on the board's foodcontainer then ya
-                if (board.transform.GetChild(0).GetChild(0).gameObject != null)
+                if (board.transform.GetChild(0).GetChild(0) != null)
                 {
                     var food = board.transform.GetChild(0).GetChild(0).gameObject;
                     //if mouse is touching food (on the click)
@@ -74,25 +95,5 @@ public class Knife : MonoBehaviour
         {
             onHold.Invoke();
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (isClicked)
-        {
-            draggable.DragObject();
-        }
-    }
-
-    public bool IsTouchingMouse(GameObject obj)
-    {
-        Vector2 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        return obj.GetComponent<Collider2D>().OverlapPoint(point);
-    }
-
-    private void CutFood(GameObject obj)
-    {
-
     }
 }
