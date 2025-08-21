@@ -3827,6 +3827,7 @@ MonoBehaviour:
   - {fileID: 218981383, guid: 892754a541cbaa241846951fcf5d9f65, type: 3}
   - {fileID: -2100409947, guid: ac711996b358e3745b67205ffe837992, type: 3}
   - {fileID: 2243605537710179018, guid: 04b708a2309d4424f81314dbaf6e9ab4, type: 3}
+  - {fileID: -5712424805676672784, guid: a13c4a0003cb0d94a93fefd077a40cee, type: 3}
   shirt:
   - {fileID: -7579585060909877998, guid: 1fc5af2313a02e546aa5934bac8e02eb, type: 3}
   - {fileID: -6336812090102057917, guid: 9347ce079cc718d4a85186cddacfe78b, type: 3}
@@ -3835,6 +3836,7 @@ MonoBehaviour:
   - {fileID: 1217991748134601033, guid: 94e6c684b9e7f8d4ebd64f5d2231d139, type: 3}
   - {fileID: -450587240783025760, guid: f0aef15f76f67fb4e93bd510ee133d9d, type: 3}
   - {fileID: -3769715052432912009, guid: c33679bd671dd0344b3f490c19227877, type: 3}
+  - {fileID: -6946863713267814212, guid: f7f548cd2fa0c7440acc84698c19b8b3, type: 3}
   bodyrenderer: {fileID: 209451420}
   shirtrenderer: {fileID: 993926192}
   foods:
