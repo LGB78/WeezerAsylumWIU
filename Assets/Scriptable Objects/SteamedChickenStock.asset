@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 071071f396a757849ad764595bf3e77f, type: 3}
-  m_Name: Money
+  m_Script: {fileID: 11500000, guid: 88132c485be5cbe4da6232d768619cd8, type: 3}
+  m_Name: SteamedChickenStock
   m_EditorClassIdentifier: 
-  value: 800
+  stock: 0
+  price: 0
+  buyamt: 0
