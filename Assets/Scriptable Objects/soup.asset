@@ -17,3 +17,7 @@ MonoBehaviour:
   unplatedFoodSprite: {fileID: 1544821379914443155, guid: b8dff3a5d65c1d545ac23a22405f84ff, type: 3}
   platedFoodSprite: {fileID: 1544821379914443155, guid: b8dff3a5d65c1d545ac23a22405f84ff, type: 3}
   isEdible: 1
+  isCuttable: 0
+  spawnOffset: {x: 1, y: 0.5}
+  sortingOrder: 69
+  stackOffset: {x: 0, y: -0.2}

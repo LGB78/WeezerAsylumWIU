@@ -17,3 +17,7 @@ MonoBehaviour:
   unplatedFoodSprite: {fileID: 0}
   platedFoodSprite: {fileID: 0}
   isEdible: 0
+  isCuttable: 0
+  spawnOffset: {x: 0, y: 0}
+  sortingOrder: 70
+  stackOffset: {x: 0, y: 0.05}
