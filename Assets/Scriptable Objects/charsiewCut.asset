@@ -20,3 +20,4 @@ MonoBehaviour:
   isCuttable: 0
   spawnOffset: {x: 0, y: 0}
   sortingOrder: 69
+  stackOffset: {x: 0, y: 0.05}
