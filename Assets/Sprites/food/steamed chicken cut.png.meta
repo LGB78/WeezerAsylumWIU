@@ -129,9 +129,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 5
-        width: 14
-        height: 11
+        y: 0
+        width: 46
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,99 +146,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: steamed chicken cut_1
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 1
-        width: 7
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 906bcf11e733a36c0800000000000000
-      internalID: -4162958288989932023
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: steamed chicken cut_2
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 4
-        width: 10
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5617ba7d48167a970800000000000000
-      internalID: 8766082422881874277
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: steamed chicken cut_3
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 5
-        width: 9
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 81e0934b3dbc537b0800000000000000
-      internalID: -5245062080880898536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: steamed chicken cut_4
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 1
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 54bccbd3cad2b22f0800000000000000
-      internalID: -996652674739025083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 598186ef058270443a89685c64d35187
     internalID: 0
     vertices: []
     indices: 
@@ -249,10 +161,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       steamed chicken cut_0: -2143146920870878694
-      steamed chicken cut_1: -4162958288989932023
-      steamed chicken cut_2: 8766082422881874277
-      steamed chicken cut_3: -5245062080880898536
-      steamed chicken cut_4: -996652674739025083
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

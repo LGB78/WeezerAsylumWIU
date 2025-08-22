@@ -11,7 +11,7 @@ public class TestFood : MonoBehaviour
     public BoolSO isKnifeHeld;      //sorry julian i kinda changed your isheld for each of these scripts to a scriptable obj
     private Bounds bounds;
 
-    void clickfood()
+    public void clickfood()
     {
         if (food == null || heldObj != null || isKnifeHeld.value == true) return;
         
@@ -31,7 +31,6 @@ public class TestFood : MonoBehaviour
         //lucas drag script
         draggable = heldObj.AddComponent<DraggableObject>();
     }
-
  
 
     private void Awake()

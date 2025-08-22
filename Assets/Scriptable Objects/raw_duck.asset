@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b21df37d64f2824e98032c7c71a530a, type: 3}
-  m_Name: steamedchicken
+  m_Name: raw_duck
   m_EditorClassIdentifier: 
-  foodName: jockey
+  foodName: raw duck
   foodDescription: 
-  unplatedFoodSprite: {fileID: 5569001679199166644, guid: 30fe2e275d6d678449794278f898d8ed, type: 3}
-  platedFoodSprite: {fileID: 5569001679199166644, guid: 30fe2e275d6d678449794278f898d8ed, type: 3}
+  unplatedFoodSprite: {fileID: -1047403298797986234, guid: 50e91682002480248918c99402ba101f, type: 3}
+  platedFoodSprite: {fileID: -1047403298797986234, guid: 50e91682002480248918c99402ba101f, type: 3}
   isEdible: 0
   isCuttable: 0
   spawnOffset: {x: 0, y: 0}
