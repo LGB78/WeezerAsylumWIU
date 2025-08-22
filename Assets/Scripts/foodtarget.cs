@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FoodTarget : MonoBehaviour
@@ -54,6 +55,22 @@ public class FoodTarget : MonoBehaviour
         sr.sortingOrder = food.sortingOrder + sameFoodCount;
         //and then here we update the bounds of the testfood
         selfscript.getbounds();
-        selfscript.activeFood = selfscript.food;//set the active food too
+        selfscript.activeFood = selfscript.food;
+        //set the active food too
+    }
+
+
+    public List<FoodItem> GetCurrentFoods()
+    {
+        List<FoodItem> foods = new List<FoodItem>();
+        foreach (Transform child in foodContainer)
+        {
+            TestFood tf = child.GetComponent<TestFood>();
+            if (tf != null && tf.food != null)
+            {
+                foods.Add(tf.food);
+            }
+        }
+        return foods;
     }
 }
