@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b21df37d64f2824e98032c7c71a530a, type: 3}
   m_Name: charsiewCut
   m_EditorClassIdentifier: 
-  foodName: char char binks
+  foodName: Char Siew
   foodDescription: 
   unplatedFoodSprite: {fileID: -4254275708818956989, guid: 75fa1a8151ef86a4c92c3429359c5146, type: 3}
   platedFoodSprite: {fileID: 2339102584366189087, guid: 53476e10a6968bb43bfb7b9234bb0747, type: 3}
-  isEdible: 1
+  onplate: 1
   isCuttable: 0
   spawnOffset: {x: 0, y: 0}
   sortingOrder: 69

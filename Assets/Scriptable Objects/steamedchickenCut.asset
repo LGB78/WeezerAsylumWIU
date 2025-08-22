@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b21df37d64f2824e98032c7c71a530a, type: 3}
-  m_Name: duck
+  m_Name: steamedchickenCut
   m_EditorClassIdentifier: 
-  foodName: dick
+  foodName: Steamed Chicken
   foodDescription: 
-  unplatedFoodSprite: {fileID: 0}
-  platedFoodSprite: {fileID: 0}
-  isEdible: 0
+  unplatedFoodSprite: {fileID: -2143146920870878694, guid: 269c7bca12cfaa047a1495bda47a1825, type: 3}
+  platedFoodSprite: {fileID: -2680332479517742309, guid: 2b8d2aaf6bcd3644fb820ec25b72fbd7, type: 3}
+  onplate: 1
   isCuttable: 0
   spawnOffset: {x: 0, y: 0}
-  sortingOrder: 70
+  sortingOrder: 69
   stackOffset: {x: 0, y: 0.05}

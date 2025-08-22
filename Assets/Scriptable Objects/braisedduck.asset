@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b21df37d64f2824e98032c7c71a530a, type: 3}
-  m_Name: cucumber
+  m_Name: braisedduck
   m_EditorClassIdentifier: 
-  foodName: Cucumber
+  foodName: Braised Duck
   foodDescription: 
-  unplatedFoodSprite: {fileID: -5454209809488632693, guid: a0f5f9d51d6449e47a6a79e0a083ef46, type: 3}
-  platedFoodSprite: {fileID: -5454209809488632693, guid: a0f5f9d51d6449e47a6a79e0a083ef46, type: 3}
+  unplatedFoodSprite: {fileID: 8868729072188591806, guid: c23029b46201391498808ce7eb2d5a6e, type: 3}
+  platedFoodSprite: {fileID: 8868729072188591806, guid: c23029b46201391498808ce7eb2d5a6e, type: 3}
   onplate: 0
-  isCuttable: 0
-  spawnOffset: {x: -0.02, y: -0.047}
+  isCuttable: 1
+  spawnOffset: {x: 0, y: 0}
   sortingOrder: 70
-  stackOffset: {x: -0.1, y: 0}
+  stackOffset: {x: 0, y: 0.05}

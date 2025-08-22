@@ -9,7 +9,8 @@ public class FoodItem : ScriptableObject
     public Sprite unplatedFoodSprite;    // Sprite shown when held with cursor
     public Sprite platedFoodSprite;  // Sprite shown on plate/cutting board
 
-    public bool isEdible; // true if safe to eat
+    public bool onplate; //bool to determine whether when plated, it goes on plate or not
+
     public bool isCuttable; //true if can be cut on chopping board
 
     public Vector2 spawnOffset;
