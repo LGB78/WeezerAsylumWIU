@@ -18,6 +18,6 @@ MonoBehaviour:
   platedFoodSprite: {fileID: -4993931312522414008, guid: 8fefe7bd5f3f87542ae08853532fdbc0, type: 3}
   onplate: 1
   isCuttable: 0
-  spawnOffset: {x: 0, y: -0.7}
+  spawnOffset: {x: -0.7, y: 0.4}
   sortingOrder: 69
   stackOffset: {x: 0, y: 0.2}
