@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b21df37d64f2824e98032c7c71a530a, type: 3}
   m_Name: soup
   m_EditorClassIdentifier: 
-  foodName: sup
-  foodDescription: soup
+  foodName: Soup
+  foodDescription: 
   unplatedFoodSprite: {fileID: 1544821379914443155, guid: b8dff3a5d65c1d545ac23a22405f84ff, type: 3}
   platedFoodSprite: {fileID: 1544821379914443155, guid: b8dff3a5d65c1d545ac23a22405f84ff, type: 3}
-  isEdible: 1
+  onplate: 0
   isCuttable: 0
   spawnOffset: {x: 1.5, y: 0.75}
   sortingOrder: 69

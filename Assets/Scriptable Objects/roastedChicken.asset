@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b21df37d64f2824e98032c7c71a530a, type: 3}
   m_Name: roastedChicken
   m_EditorClassIdentifier: 
-  foodName: chimken
+  foodName: Roasted Chicken
   foodDescription: 
   unplatedFoodSprite: {fileID: 7300445918034196877, guid: 5c52a63a0546b584eb657db76b7c5629, type: 3}
   platedFoodSprite: {fileID: 7300445918034196877, guid: 5c52a63a0546b584eb657db76b7c5629, type: 3}
-  isEdible: 1
+  onplate: 0
   isCuttable: 1
+  spawnOffset: {x: 0, y: 0}
+  sortingOrder: 69
+  stackOffset: {x: 0, y: 0.05}

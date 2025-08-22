@@ -125,10 +125,10 @@ TextureImporter:
       name: duckCut_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 15
-        width: 61
-        height: 32
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,9 +158,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       duckCut_0: -6762389404108127251
-      duckCut_1: -2589374762909217239
-      duckCut_2: 7318521978756770943
-      duckCut_3: 142154167431740283
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

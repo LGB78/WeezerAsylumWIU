@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b21df37d64f2824e98032c7c71a530a, type: 3}
   m_Name: rice
   m_EditorClassIdentifier: 
-  foodName: ching
+  foodName: Rice
   foodDescription: 
   unplatedFoodSprite: {fileID: -8409239573254114549, guid: 56c180f90fc0f194e83185d250a96102, type: 3}
   platedFoodSprite: {fileID: 4089810013930393946, guid: 22bb80c99322b11468e7dea86115f3cd, type: 3}
-  isEdible: 1
+  onplate: 1
   isCuttable: 0
   spawnOffset: {x: -0.7, y: 0.4}
   sortingOrder: 69
