@@ -4,11 +4,14 @@ public class FoodTarget : MonoBehaviour
 {
     public Transform foodContainer;
     public bool isBoard;
+    public float newhigh = -999;
+    int foodcount = 0;
 
     void Awake()
     {
         if (foodContainer == null)
             foodContainer = transform;
+        foodcount = 0;
     }
 
     public void ReceiveFood(FoodItem food, GameObject foodreference)
@@ -24,7 +27,7 @@ public class FoodTarget : MonoBehaviour
             if (child.name == food.foodName)
                 sameFoodCount++;
         }
-
+        foodcount++;
         // Spawn new instance
         GameObject newFood = new GameObject(food.foodName);
         newFood.transform.SetParent(foodContainer);
@@ -41,6 +44,16 @@ public class FoodTarget : MonoBehaviour
         Vector3 pos = transform.position;
         pos.x += food.spawnOffset.x + (sameFoodCount * food.stackOffset.x);
         pos.y += food.spawnOffset.y + (sameFoodCount * food.stackOffset.y);
+
+
+        if (food.onplate == true)
+        {
+            if (newhigh != -999)
+            {
+                pos.y = newhigh + food.stackOffset.y;
+            }
+            newhigh = pos.y;
+        }
         newFood.transform.position = pos;
 
         // Add sprite renderer
@@ -51,7 +64,7 @@ public class FoodTarget : MonoBehaviour
         selfcollider.size = selfcollider.gameObject.GetComponent<SpriteRenderer>().size;
         selfscript.isKnifeHeld = parentscript.isKnifeHeld;//same with this where i set the knife held stuff
         // Sorting order increases with each duplicate
-        sr.sortingOrder = food.sortingOrder + sameFoodCount;
+        sr.sortingOrder = food.sortingOrder + foodcount;
         //and then here we update the bounds of the testfood
         selfscript.getbounds();
         selfscript.activeFood = selfscript.food;//set the active food too

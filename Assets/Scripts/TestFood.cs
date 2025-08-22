@@ -13,7 +13,7 @@ public class TestFood : MonoBehaviour
 
     void clickfood()
     {
-        if (food == null || heldObj != null || isKnifeHeld.value == true) return;
+        if (food == null || heldObj != null || isKnifeHeld.value == true || (transform.parent.gameObject.tag != "board" && transform.parent.gameObject.layer == LayerMask.NameToLayer("BoardNTray"))) return;
         
         // Spawn the held food sprite object
         heldObj = new GameObject("Held_" + food.foodName);
