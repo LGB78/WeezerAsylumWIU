@@ -77,6 +77,7 @@ public class TestFood : MonoBehaviour
 
     private void TryPlaceFood(GameObject thefood)
     {
+        //chick if it is under board and tray layer, which also covers the cooking stuff
         Collider2D hit = Physics2D.OverlapPoint(thefood.transform.position, LayerMask.GetMask("BoardNTray"));
         if (hit != null)
         {

@@ -20,6 +20,12 @@ public class FoodTarget : MonoBehaviour
         if (food == null) return;
 
         if (transform.childCount > 0 && gameObject.tag == "board") return;
+        
+        if (GetComponent<cookingutensil>() != null)
+        {
+            GetComponent<cookingutensil>().cook(food);
+            return;
+        }
 
         // Count how many of the same food type already exist
         int sameFoodCount = 0;
