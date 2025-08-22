@@ -18,14 +18,14 @@ public class OrderValidator : MonoBehaviour
         List<FoodItem> placed = trayTarget.GetCurrentFoods();
         List<FoodItem> wanted = orderSO.order;
 
-        // 1. Check count
+        //Check count
         if (placed.Count != wanted.Count)
         {
             Debug.Log("Wrong number of items!");
             return false;
         }
 
-        // 2. Check contents (ignores sequence)
+        //Check contents 
         foreach (FoodItem wantedItem in wanted)
         {
             bool found = placed.Exists(f => f == wantedItem);

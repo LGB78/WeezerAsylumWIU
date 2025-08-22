@@ -4,7 +4,7 @@ public class ServeButton : MonoBehaviour
 {
     [SerializeField] private OrderValidator orderValidator;
 
-    // This method should be linked to the button's OnClick event
+    // Linked to Button Onclick event
     public void OnServeButtonPressed()
     {
         if (orderValidator == null)
@@ -23,6 +23,7 @@ public class ServeButton : MonoBehaviour
         {
             Debug.Log("Order incorrect!");
             // logic for angy customer
+            //maybe lose a bit of moolah 
         }
     }
 }
