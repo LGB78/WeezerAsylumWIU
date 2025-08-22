@@ -1200,6 +1200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodContainer: {fileID: 459408563}
   isBoard: 1
+  newhigh: -999
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,6 +1487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodContainer: {fileID: 560223153}
   isBoard: 0
+  newhigh: -999
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
