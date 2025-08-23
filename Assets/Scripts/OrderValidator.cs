@@ -26,15 +26,16 @@ public class OrderValidator : MonoBehaviour
         }
 
         //Check contents 
-        foreach (FoodItem wantedItem in wanted)
+        foreach (FoodItem placedItem in placed)
         {
-            bool found = placed.Exists(f => f == wantedItem);
-            if (!found)
+            if (!wanted.Contains(placedItem))
             {
-                Debug.Log("Missing item: " + wantedItem.foodName);
                 return false;
             }
+            wanted.Remove(placedItem);
         }
+        if (wanted.Count > 0) return false;
+
 
         Debug.Log("Order correct!");
         return true;
