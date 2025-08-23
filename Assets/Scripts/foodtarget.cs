@@ -27,6 +27,11 @@ public class FoodTarget : MonoBehaviour
             return;
         }
 
+        if (transform.childCount == 0)
+        {
+            newhigh = -999;//set newhigh to -999 if theres no children
+        }
+
         // Count how many of the same food type already exist
         int sameFoodCount = 0;
         foreach (Transform child in foodContainer)
