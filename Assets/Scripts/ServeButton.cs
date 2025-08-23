@@ -3,6 +3,12 @@ using UnityEngine;
 public class ServeButton : MonoBehaviour
 {
     [SerializeField] private OrderValidator orderValidator;
+    BuySell buysell;
+
+    private void Start()
+    {
+        buysell = GetComponent<BuySell>();
+    }
 
     // Linked to Button Onclick event
     public void OnServeButtonPressed()
@@ -13,11 +19,13 @@ public class ServeButton : MonoBehaviour
             return;
         }
 
+        int price = (int)(orderValidator.orderSO.order.Count * 1.5);
         bool isCorrect = orderValidator.Validate();
         if (isCorrect)
         {
             Debug.Log("Order served correctly!");
             // logic for wow money money
+            buysell.sell(price);
         }
         else
         {

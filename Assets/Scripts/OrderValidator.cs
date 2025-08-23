@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class OrderValidator : MonoBehaviour
 {
-    [SerializeField] foodorder orderSO;      // Reference to the ScriptableObject order
+    public foodorder orderSO;      // Reference to the ScriptableObject order
     [SerializeField] FoodTarget trayTarget;  // where the player puts food
 
     // Call this when the player submits the order

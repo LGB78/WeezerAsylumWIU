@@ -18,4 +18,12 @@ public class BuySell : MonoBehaviour
             stockUIManager.updateUI();
         }
     }
+    public void sell(int price)
+    {
+        money.value += price;
+        if (stockUIManager != null)
+        {
+            stockUIManager.updateUI();
+        }
+    }
 }
