@@ -116,6 +116,8 @@ public class TestFood : MonoBehaviour
     //get bounds component again
     public void getbounds()
     {
-        bounds = GetComponent<Collider2D>().bounds;
+        var collidercomp = GetComponent<Collider2D>();
+        if (collidercomp != null)
+            bounds = collidercomp.bounds;
     }
 }
