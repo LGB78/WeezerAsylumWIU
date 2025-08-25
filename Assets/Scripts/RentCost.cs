@@ -6,7 +6,7 @@ public class RentCost : MonoBehaviour
     [SerializeField] private IntSO money;
     [SerializeField] private int rentAmount = 100;
     [SerializeField] private daytimer dayTimer;
-    [SerializeField] private TMP_Text rentText; // Reference to the TMP_Text for rental cost
+    [SerializeField] private TMP_Text rentText; // Reference to the text for rental cost
 
     private void Awake()
     {
