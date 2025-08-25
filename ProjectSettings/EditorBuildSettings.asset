@@ -11,6 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Preparation Phase.unity
     guid: c9c2a314b406196459bb628e782cbba9
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 847626f4a0d6bfa4ea7bdef2d79b9b89
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 3137501c2986d734385ec93f55aca576
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 167f0fa78ece82645839012e08aff859
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
