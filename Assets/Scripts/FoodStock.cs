@@ -6,4 +6,9 @@ public class FoodStock : ScriptableObject
     public int stock;
     public int price;
     public int buyamt;
+
+    public void ChangeStock(int amt)
+    {
+        stock += amt;
+    }
 }
