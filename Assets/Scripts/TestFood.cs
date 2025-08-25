@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TestFood : MonoBehaviour
 {
@@ -8,8 +9,10 @@ public class TestFood : MonoBehaviour
     public GameObject heldObj;          // temporary sprite following the mouse
     private DraggableObject draggable;   // reference to draggable component
     public FoodItem activeFood;
-    public BoolSO isKnifeHeld;      //sorry julian i kinda changed your isheld for each of these scripts to a scriptable obj
+    public BoolSO isKnifeHeld;      
     private Bounds bounds;
+
+    public UnityEvent placed;
 
     public void clickfood()
     {
@@ -87,11 +90,17 @@ public class TestFood : MonoBehaviour
                 //used the heldobj activefood here to make it more accurate
                 if (thefood.GetComponent<TestFood>().activeFood.isCuttable && target.isBoard)
                 {
-                    target.ReceiveFood(activeFood, thefood);
+                    if (target.ReceiveFood(activeFood, thefood) && placed != null)
+                    {
+                        placed.Invoke();
+                    }
                 }
                 else if (!thefood.GetComponent<TestFood>().activeFood.isCuttable && !target.isBoard)
                 {
-                    target.ReceiveFood(activeFood, thefood);
+                    if (target.ReceiveFood(activeFood, thefood) && placed != null)
+                    {
+                        placed.Invoke();
+                    }
                     //delete object if its a cutting board object
                     if (gameObject.transform.parent.gameObject.tag == "board")
                     {

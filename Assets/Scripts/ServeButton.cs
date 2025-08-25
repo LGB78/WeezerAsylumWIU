@@ -4,6 +4,7 @@ public class ServeButton : MonoBehaviour
 {
     [SerializeField] private OrderValidator orderValidator;
     BuySell buysell;
+    [SerializeField] Combo combo;
 
     private void Start()
     {
@@ -19,19 +20,22 @@ public class ServeButton : MonoBehaviour
             return;
         }
 
-        int price = (int)(orderValidator.orderSO.order.Count * 1.5);
+        int price = (int)(orderValidator.orderSO.order.Count * 1.5 + combo.combo);
         bool isCorrect = orderValidator.Validate();
         if (isCorrect)
         {
             Debug.Log("Order served correctly!");
             // logic for wow money money
             buysell.sell(price);
+            combo.combo++;
         }
         else
         {
             Debug.Log("Order incorrect!");
             // logic for angy customer
             //maybe lose a bit of moolah 
+            combo.combo = 0;
         }
+        combo.updatetext();
     }
 }

@@ -15,16 +15,16 @@ public class FoodTarget : MonoBehaviour
         foodcount = 0;
     }
 
-    public void ReceiveFood(FoodItem food, GameObject foodreference)
+    public bool ReceiveFood(FoodItem food, GameObject foodreference)
     {
-        if (food == null) return;
+        if (food == null) return false;
 
-        if (transform.childCount > 0 && gameObject.tag == "board") return;
+        if (transform.childCount > 0 && gameObject.tag == "board") return false;
         
         if (GetComponent<cookingutensil>() != null)
         {
             GetComponent<cookingutensil>().cook(food);
-            return;
+            return true;
         }
 
         if (transform.childCount == 0)
@@ -81,6 +81,8 @@ public class FoodTarget : MonoBehaviour
         selfscript.getbounds();
         selfscript.activeFood = selfscript.food;
         //set the active food too
+
+        return true;
     }
 
 

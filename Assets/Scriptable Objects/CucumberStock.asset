@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88132c485be5cbe4da6232d768619cd8, type: 3}
   m_Name: CucumberStock
   m_EditorClassIdentifier: 
-  stock: 0
+  stock: 12
   price: 5
   buyamt: 20
