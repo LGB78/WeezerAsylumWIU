@@ -5191,7 +5191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ee3aa4a1b3be54498e6bfdbc8b0aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orderValidator: {fileID: 0}
+  orderValidator: {fileID: 2019633827}
   combo: {fileID: 1088142311}
 --- !u!114 &1384005095
 MonoBehaviour:
@@ -5275,7 +5275,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  maxtime: 10
+  maxtime: 100
   clockHand: {fileID: 794700735}
 --- !u!1 &1413671954
 GameObject:
