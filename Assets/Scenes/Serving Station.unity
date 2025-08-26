@@ -5955,6 +5955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: {fileID: 11400000, guid: b2df8bc23944cd74a8fb1044e577a37b, type: 2}
   days: {fileID: 11400000, guid: 36fd58a5c5044804a81af686aa41f6ff, type: 2}
+  knife: {fileID: 0}
 --- !u!4 &1480755298
 Transform:
   m_ObjectHideFlags: 0
@@ -6361,7 +6362,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1647364185
 RectTransform:
   m_ObjectHideFlags: 0

@@ -27,7 +27,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadSceneBasedOnDays()
     {
-        if (days.value == 3)
+        if (days.value == 3 && money.value >= 0)
         {
             LoadScene("Win");
         }
