@@ -6477,6 +6477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: {fileID: 11400000, guid: b2df8bc23944cd74a8fb1044e577a37b, type: 2}
   days: {fileID: 11400000, guid: 36fd58a5c5044804a81af686aa41f6ff, type: 2}
+  knife: {fileID: 11400000, guid: aa8e280fee3475540a044d65450f3885, type: 2}
 --- !u!4 &1480755298
 Transform:
   m_ObjectHideFlags: 0
@@ -7830,6 +7831,16 @@ MonoBehaviour:
   - {fileID: -5712424805676672784, guid: a13c4a0003cb0d94a93fefd077a40cee, type: 3}
   - {fileID: 1397592014, guid: 0c5fdecb254b40a4cabc0778f43d5524, type: 3}
   - {fileID: 269800262637768828, guid: f79cc4f8c2692d142829c7f8343553fc, type: 3}
+  - {fileID: -5974069203041003359, guid: 25623a3ab478ecf45ba00ae314a59f99, type: 3}
+  - {fileID: -5061657299554689558, guid: 9a847d6d35c04124e97c623263e637eb, type: 3}
+  - {fileID: 2790375796039217335, guid: 5487e82f193f77e438c3080179b15333, type: 3}
+  - {fileID: -3435725021574895049, guid: 13cc6e22425f5d84f80ad89b7464649f, type: 3}
+  - {fileID: -3839716932313879769, guid: bba8ab1e11e63824086d24c54f4cf1fd, type: 3}
+  - {fileID: -7284395316283671998, guid: bbe91914371d9ec46b8fd8844fabb53c, type: 3}
+  - {fileID: -6066024153597827589, guid: 1b6db0b8bea258e4ea924a993804cbcd, type: 3}
+  - {fileID: -6535494430460083882, guid: e9cdda0bd873556419a96d0087269174, type: 3}
+  - {fileID: 6255390387935457044, guid: c2223b585b5c1b04b9c3a3143c0bfc20, type: 3}
+  - {fileID: -4831827578860546980, guid: b4eb8698fb074ed4ba127bbada66d5eb, type: 3}
   shirt:
   - {fileID: -7579585060909877998, guid: 1fc5af2313a02e546aa5934bac8e02eb, type: 3}
   - {fileID: -6336812090102057917, guid: 9347ce079cc718d4a85186cddacfe78b, type: 3}

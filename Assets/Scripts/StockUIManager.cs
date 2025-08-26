@@ -15,6 +15,7 @@ public class StockUIManager : MonoBehaviour
 
     public void updateUI()
     {
+        if (price != null) 
         price.text = "$" + money.value;
         for (int i = 0; i < stocks.Length; i++)
         {

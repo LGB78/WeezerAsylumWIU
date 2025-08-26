@@ -3498,7 +3498,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.4943396, g: 0.32174954, b: 0.26768956, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -16514,6 +16514,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d258a1ba607f544c9afa1cffc16ae3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  money: {fileID: 11400000, guid: b2df8bc23944cd74a8fb1044e577a37b, type: 2}
+  days: {fileID: 11400000, guid: 36fd58a5c5044804a81af686aa41f6ff, type: 2}
+  knife: {fileID: 11400000, guid: aa8e280fee3475540a044d65450f3885, type: 2}
 --- !u!4 &1070656980
 Transform:
   m_ObjectHideFlags: 0

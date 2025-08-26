@@ -5,8 +5,11 @@ public class SceneLoader : MonoBehaviour
 {
     public IntSO money;
     public IntSO days;
+    public BoolSO knife;
     public void LoadScene(string sceneName)
     {
+        if (knife != null)
+        knife.value = false;
         SceneManager.LoadScene(sceneName);
     }
 
