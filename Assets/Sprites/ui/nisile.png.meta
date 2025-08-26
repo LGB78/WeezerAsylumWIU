@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a3eed549c914b594eaddfa1286e419f5
+guid: b53575206c717f94fa3cb001a20e48dd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1502778351870583366
-    second: golshi_0
+      213: -9094227312785708954
+    second: nisile_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -74,7 +74,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: golshi_0
+      name: nisile_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 4000
-        height: 4000
+        width: 500
+        height: 281
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: abd5b901d0f052be0800000000000000
-      internalID: -1502778351870583366
+      spriteID: 668a0ca3170dac180800000000000000
+      internalID: -9094227312785708954
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      golshi_0: -1502778351870583366
+      nisile_0: -9094227312785708954
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
