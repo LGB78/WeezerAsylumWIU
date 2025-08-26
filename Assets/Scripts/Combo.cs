@@ -16,5 +16,14 @@ public class Combo : MonoBehaviour
     {
         text.text = "Combo: " + combo;
     }
-    
+    public void comboadd()
+    {
+        combo++;
+    }
+    public void combodead()
+    {
+        combo = 0;
+    }
+
+
 }
