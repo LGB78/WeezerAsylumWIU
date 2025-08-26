@@ -4,4 +4,9 @@ using UnityEngine;
 public class IntSO : ScriptableObject
 {
     public int value;
+
+    public void IncreaseValue(int val)
+    {
+        value += val;
+    }
 }

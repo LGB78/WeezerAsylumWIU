@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     public IntSO money;
+    public IntSO days;
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
@@ -18,6 +19,18 @@ public class SceneLoader : MonoBehaviour
         else 
         {
             LoadScene("GameOver");
+        }
+    }
+
+    public void LoadSceneBasedOnDays()
+    {
+        if (days.value == 3)
+        {
+            LoadScene("Win");
+        }
+        else
+        {
+            LoadSceneBasedOnMoney();
         }
     }
 }
